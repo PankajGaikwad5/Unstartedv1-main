@@ -7,7 +7,7 @@
   font-family: Inter, sans-serif;
 }
 
-header {
+/* header {
   width: 100%;
   height: 60px;
   background-color: white;
@@ -28,14 +28,14 @@ header {
   }
 }
 
-/* .hamburger {
+.hamburger {
   display: none;
   padding: 10px 15px;
   background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
-} */
+}
 
 header .logo {
   font-size: 2rem;
@@ -56,7 +56,7 @@ header nav .header-btn {
   font-size: 1rem;
   border: none;
   border-radius: 5px;
-}
+} */
 
 /*  page-1  */
 #page-1 {
@@ -685,7 +685,7 @@ header nav .header-btn {
 }
 
 /* footer */
-footer {
+/* footer {
   width: 100%;
   max-width: 1500px;
   height: auto;
@@ -705,7 +705,7 @@ footer {
 .f-col-1 {
   flex-basis: 25%;
   margin-bottom: 30px;
-}
+} */
 
 /* .f-col-1 p {
   font-size: 1.1rem;
@@ -713,11 +713,11 @@ footer {
   margin-bottom: 50px;
 } */
 
-.f-col-1 p {
+/* .f-col-1 p {
   font-size: 1.1rem;
   color: gray;
   margin-bottom: 50px;
-  word-break: break-word; /* Add this line */
+  word-break: break-word;
 }
 
 .f-icons {
@@ -769,10 +769,10 @@ footer {
 
 .f-col-3-text {
   font-size: 20px;
-}
+} */
 
 /* Media queries for mobile devices */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .footer-row {
     flex-direction: column;
     align-items: center;
@@ -826,4 +826,4 @@ footer {
   .f-text {
     font-size: 3rem;
   }
-}
+} */
