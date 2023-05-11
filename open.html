@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Vertos</title>
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/open.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+  <header
+    class="border-b border-black w-full top-0 sticky z-20 bg-white px-4 md:px-8 py-2 flex justify-between items-center">
+    <h1 class="logo text-2xl">Unstarted</h1>
+    <button class="menu-button lg:hidden absolute right-4 top-3 z-20" onclick="btnClick('open')">
+      <i class="bi bi-list text-2xl"></i>
+    </button>
+    <button class="menu-button2 hidden absolute right-4 top-3 z-30 text-white" onclick="btnClick('close')">
+      <i class="bi bi-x-lg text-2xl"></i>
+    </button>
+    <nav class="pc-nav items-center hidden md:flex">
+      <a href="#" class="text-black text-base font-medium mx-4">Executive Management</a>
+      <a href="#" class="text-black text-base font-medium mx-4">Hire from us</a>
+      <a href="#" class="text-black text-base font-medium mx-4">Blog</a>
+      <a href="#" class="text-black text-base font-medium mx-4">Support</a>
+      <a href="./login.html" class="header-btn bg-black text-white px-4 py-2 rounded-md text-base font-medium">Login</a
+        href="">
+      <!-- <button class="header-btn bg-black text-white px-4 py-2 rounded-md text-base font-medium">Login</button> -->
+    </nav>
+    <nav
+      class="mobile-nav absolute w-full h-screen top-0 left-[-100%] z-10 flex flex-col justify-center items-center bg-black text-white text-xl duration-500 pl-8">
+      <a href="#" class="text-white my-2 text-2xl">Executive Management</a>
+      <a href="#" class="text-white my-2 text-2xl">Hire from us</a>
+      <a href="#" class="text-white my-2 text-2xl">Blog</a>
+      <a href="#" class="text-white my-2 text-2xl">Support</a>
+      <a href="./login.html" class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">Login</a href="">
+      <!-- <button class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">Login</button> -->
+    </nav>
+  </header>
+  <section class="banner-section" style="padding-top: 105px;">
+    <div class="banner container-fluid text-start d-flex justify-content-between">
+      <div class="course-content text-white d-flex flex-column align-items-start">
+        <div class="mb-5">
+          <button class="btn btn-lg btn-light" style="border-radius: 25px;" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"> book a demo</button>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="d-flex flex-row-reverse p-3">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-5">
+                  <h4 class="text-black"> To Book A Demo Fill Your Details</h4>
+                  <form class="mb-4">
+                    <div class="text-start form-outline">
+                      <label>Name</label>
+                      <input type="text" id="form2" placeholder="Enter your name" class="form-control" />
+                    </div>
+                    <!-- Email input -->
+                    <div class="text-start form-outline">
+                      <label>Email Address</label>
+                      <input type="email" id="form2" placeholder="Email Address" class="form-control" />
+                    </div>
+
+                    <div class="text-start form-outline">
+                      <label>Mobile number</label>
+                      <input type="number" id="form2" placeholder="Mobile number" class="form-control" />
+                    </div>
+                    <!-- Password input -->
+                    <div class="text-start form-outline">
+                      <label>University</label>
+                      <input type="password" id="form2" placeholder="University name" class="form-control" />
+                    </div>
+                    <div class="text-start form-outline mb-4">
+                      <label>Passout Year</label>
+                      <input type="text" id="form2" placeholder="Enter passout year" class="form-control" />
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-success btn-block">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="my-4" style="font-size: 50px;">Web Design & Development</h1>
+          <p style="width: 70%;">Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus
+            vestibulum lorem sed risus ultricies.</p>
+        </div>
+        <div style="position:relative;">
+          <div class="course-preview-filter ms-5" style>
+            <iframe width="650" height="345" src="https://www.youtube.com/embed/w-kBRUXsuSQ"
+              style="border-radius: 30px;">
+            </iframe>
+          </div>
+        </div>
+        <div style="padding-top: 420px;">
+          <section class="navbar-light bg-white">
+            <div id="header">
+              <nav id="navbar-example2" class="navbar px-3">
+                <ul class="nav active-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link fs-5" data-page="Heading1" href="#scrollspyHeading1">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" data-page="Heading2" href="#scrollspyHeading2">Topics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" data-page="Heading3" href="#scrollspyHeading3">Result</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" data-page="Heading4" href="#scrollspyHeading4">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" data-page="Heading5" href="#scrollspyHeading5">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <div id="pages">
+            <div class="mt-5 mb-5 border-bottom text-black page" data-page="Heading1">
+              <h2 class="mb-4">About the course</h2>
+              <p class="mb-4 pb-5">Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa
+                aliquam id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus viverra praesent felis
+                consequat pellentesque turpis et quisque platea. Eu, elit ut nunc ac mauris bibendum nulla placerat.
+                Sagittis sit eu sit massa sapien, risus diam. In lorem eu sed euismod laoreet urna, feugiat et. Euismod
+                sem purus rutrum in. Tortor varius a bibendum nisl et tellus. Aliquet elit senectus iaculis netus
+                gravida.</p>
+              <h2 class="mb-4">Instructor</h2>
+              <h5 class="mb-2 text-primary" style="font-style: underline;">Dr. Angela Yu</h5>
+              <h6 class="mb-4 text-secondary">Developer and Lead Instructor</h6>
+              <div class="row mb-4">
+                <div class="col-md-2">
+                  <img src="img/instructor.jpg" width="120" height="120" class="rounded-circle" alt="">
+                </div>
+                <div class="col-md-8 ps-5">
+                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-star-fill me-3" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>4.7 Instructor Rating</p>
+                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-award-fill me-3" viewBox="0 0 16 16">
+                      <path
+                        d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+                      <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                    </svg>553,949 Reviews</p>
+                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-people-fill me-3" viewBox="0 0 16 16">
+                      <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    </svg>1,723,085 Students</p>
+                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-play-fill me-3" viewBox="0 0 16 16">
+                      <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>9 Courses</p>
+                </div>
+              </div>
+              <div class="mb-5 fs-6">
+                <p>I'm Angela, I'm a developer with a passion for teaching. I'm the
+                  <strong>lead instructor</strong>
+                  at the London App Brewery, London's leading
+                  <strong>Programming Bootcamp</strong>
+                  . I've helped hundreds of thousands of students learn to code and change their lives by becoming a
+                  developer. I've been invited by companies such as Twitter, Facebook and Google to teach their
+                  employees.
+                </p>
+                <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space
+                  Invader game. Since then, I've made
+                  <strong>hundred of websites, apps and games</strong>
+                  . But most importantly, I realised that my
+                  <strong>greatest passion</strong>
+                  is teaching.
+                </p>
+                <p>I spend most of my time researching how to make
+                  <strong>learning to code fun</strong>
+                  and make
+                  <strong>hard concepts easy to understand</strong>"
+                  . I apply everything I discover into my bootcamp courses. In my courses, you'll find lots of geeky
+                  humour but also lots of
+                  <strong>explanations and animations</strong>
+                  to make sure everything is easy to understand.
+                </p>
+                <p><strong>I'll be there for you every step of the way.</strong></p>
+              </div>
+            </div>
+            <div class="mt-5 mb-5 border-bottom text-black hide page" data-page="Heading2">
+              <h2 class="mb-4">Course Content</h2>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item card text-secondary shadow-sm mb-4">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <div class="col-9 p-0 d-flex align-items-center">
+                      <div class="col-sm-12 col-md-8 p-0">
+                        <h5 class="m-0 pl-0 pointer col-12 d-flex align-items-center">Beginner Module</h5>
+                      </div>
+                      <h6 class="m-0 pointer col-sm-12 col-md-4 d-none d-md-block align-items-center text-secondary">7
+                        Lessons</h6>
+                    </div>
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="list-unstyled steps">
+                            <li>Why to use python ?</li>
+                            <li>Python IDE</li>
+                            <li>Hello World Program in Python</li>
+                            <li>Numbers And Math functions</li>
+                            <li>Common Errors in Python</li>
+                            <li>Assignment 1</li>
+                            <li>Final Quiz</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item card text-secondary shadow-sm mb-4">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <div class="col-9 p-0 d-flex align-items-center">
+                      <div class="col-sm-12 col-md-8 p-0">
+                        <h5 class="m-0 pl-0 pointer col-12 d-flex align-items-center">Intermediate Module</h5>
+                      </div>
+                      <h6 class="m-0 pointer col-sm-12 col-md-4 d-none d-md-block align-items-center text-secondary">7
+                        Lessons</h6>
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="list-unstyled steps">
+                            <li>Why to use python ?</li>
+                            <li>Python IDE</li>
+                            <li>Hello World Program in Python</li>
+                            <li>Numbers And Math functions</li>
+                            <li>Common Errors in Python</li>
+                            <li>Assignment 1</li>
+                            <li>Final Quiz</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item card text-secondary shadow-sm mb-4">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    <div class="col-9 p-0 d-flex align-items-center">
+                      <div class="col-sm-12 col-md-8 p-0">
+                        <h5 class="m-0 pl-0 pointer col-12 d-flex align-items-center">Advanced Module</h5>
+                      </div>
+                      <h6 class="m-0 pointer col-sm-12 col-md-4 d-none d-md-block align-items-center text-secondary">8
+                        Lessons</h6>
+                    </div>
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="list-unstyled steps">
+                            <li>Why to use python ?</li>
+                            <li>Python IDE</li>
+                            <li>Hello World Program in Python</li>
+                            <li>Numbers And Math functions</li>
+                            <li>Common Errors in Python</li>
+                            <li>Assignment 1</li>
+                            <li>Final Quiz</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="mb-4">What you will learn</h2>
+              <div class="row mb-4 pb-5">
+                <div class="col-md-6">
+                  <ul class="px-2" style="list-style-position: inside;">
+                    <li class="tick ps-2">You will learn automation, game, app and web development, data science and
+                      machine learning all using Python.</li>
+                    <li class="tick ps-2">You will learn Selenium, Beautiful Soup, Request, Flask, Pandas, NumPy, Scikit
+                      Learn, Plotly, and Matplotlib.</li>
+                    <li class="tick ps-2">Be able to build fully fledged websites and web apps with Python</li>
+                    <li class="tick ps-2">Build games like Blackjack, Pong and Snake using Python</li>
+                    <li class="tick ps-2">Build GUIs and Desktop applications with Python</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="px-2" style="list-style-position: inside;">
+                    <li class="tick ps-2">You will master the Python programming language by building 100 unique
+                      projects over 100 days.</li>
+                    <li class="tick ps-2">You will be able to program in Python professionally</li>
+                    <li class="tick ps-2">Create a portfolio of 100 Python projects to apply for developer jobs</li>
+                    <li class="tick ps-2">Be able to use Python for data science and machine learning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 mb-5 border-bottom text-black hide page" data-page="Heading3">
+              <h2 class="mb-4">Results after course completion</h2>
+              <p class="mb-4">Eget aliquet nibh praesent tristique magna sit amet purus. Consequat id porta nibh
+                venenatis cras sed felis. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Habitant morbi
+                tristique senectus et netus et malesuada fames ac. Et tortor consequat id porta nibh venenatis cras sed
+                felis.</p>
+              <p class="mb-4 pb-5">Mi sit amet mauris commodo quis. Eget arcu dictum varius duis at consectetur
+                lorem.Venenatis cras sed felis eget velit aliquet.</p>
+              <img src="img/feature.jpeg" style="width: auto; height: 350px; object-fit: cover;" class="mb-4">
+            </div>
+            <div class="mt-5 mb-5 border-bottom text-black hide page" data-page="Heading4">
+              <h2 class="mb-5">What our students say</h2>
+              <div class="d-flex flex-column justify-content-center align-items-start">
+                <div class="card flex-fill mb-4" style="padding: 40px 17px 40px 25px;">
+                  <div class="d-flex flex-row">
+                    <img src="img/face1.jpg" class="rounded-circle" style="width: 133px;height:133px;">
+                    <div class="ms-5 mb-3">
+                      <div class="d-flex flex-row align-items-center fs-3">
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                      </div>
+                      <div class="fs-6 text-secondary mb-3">
+                        “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint”
+                      </div>
+                      <div class="fw-bold fs-5 mb-2">
+                        Katherine Cutts
+                      </div>
+                      <div class="fs-6 text-secondary">Junior Designer at Facebook</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card flex-fill mb-5" style="padding: 40px 17px 40px 25px;">
+                  <div class="d-flex flex-row">
+                    <img src="img/face2.jpg" class="rounded-circle" style="width: 133px;height:133px;">
+                    <div class="ms-5 mb-3">
+                      <div class="d-flex flex-row align-items-center fs-3">
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                        <i class="fa fa-star" style="color: yellow;"></i>
+                      </div>
+                      <div class="fs-6 text-secondary mb-3">
+                        “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint”
+                      </div>
+                      <div class="fw-bold fs-5 mb-2">
+                        Daniel Smith
+                      </div>
+                      <div class="fs-6 text-secondary">Mobile Developer at Google</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 mb-5 border-bottom text-black hide page w-100" data-page="Heading5">
+              <h2 class="mb-5">Frequently Asked Questions</h2>
+              <div class="accordion mb-5" id="accordionExample">
+                <div class="accordion-item card text-secondary shadow-sm mb-2">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Where will I learn this course?
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>You will be transferred to IIT-Madras's Digital Skills Academy website to learn the course as
+                        this a course provided by GUVI in SkillsAcademy platform</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item card text-secondary shadow-sm mb-2">
+                  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Will I gain access to any sort of Forum support?
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Yes. You will gain complete access to our forum support to connect with our fellow aspiring
+                        users.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item card text-secondary shadow-sm mb-2">
+                  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Is this Certificate issued by IIT or GUVI?
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Your Certification is directly issued by IIT-Madras’s Digital Skills Academy(mentioned in the
+                      certificate) through GUVI.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item card text-secondary shadow-sm mb-2">
+                  <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    When will I receive my Certificate & How will I receive it?
+                  </div>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Certificates are awarded separately for a nominal fee. If Paid, you will receive an
+                        E-certificate through email as soon as you complete the course with 100% progress.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="course-sidebar mb-5">
+        <div class="card mr-md-1 shadow" id="formCard">
+          <div class="card-body">
+            <h1>$ 99.00 USD</h1>
+            <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, dolor consectetur adipiscing elit purus vivera.</p>
+            <div class="d-flex">
+              <button class="btn btn-lg btn-primary flex-fill" style="border-radius: 25px;">Buy Now</button>
+            </div>
+            <div class="mt-4 row">
+              <div class="col-md-1 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                  <path
+                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z" />
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg></div>
+              <div class="col-md-11 fs-5 mb-2"><span class="text-secondary ms-2">Level: </span><span
+                  class="fw-bold">Basic</span></div>
+              <div class="col-md-1 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                </svg></div>
+              <div class="col-md-11 fs-5 mb-2"><span class="text-secondary ms-2">Duration: </span><span
+                  class="fw-bold">5hr 48m</span></div>
+              <div class="col-md-1 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z" />
+                </svg></div>
+              <div class="col-md-11 fs-5 mb-2"><span class="text-secondary ms-2">Lessons: </span><span
+                  class="fw-bold">40</span></div>
+              <div class="col-md-1 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg></div>
+              <div class="col-md-11 fs-5 mb-2"><span class="text-secondary ms-2">Lifetime Access</span></div>
+              <div class="col-md-1 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                  <path
+                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg></div>
+              <div class="col-md-11 fs-5 mb-2"><span class="text-secondary ms-2">Access From Any Computer, Tablet or
+                  Mobile</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black">
+    <div class="container mx-auto py-8">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="w-full md:w-1/2 lg:w-1/4 text-white p-4">
+          <p class="text-gray-500">Unstarted is committed to promoting the services of the future goals as
+            well
+            as the earth still lives in the world as its crapy so on the goos bdugt grate</p>
+          <div class="flex justify-center mt-4">
+            <a href="#"><i class="bi bi-facebook text-white text-2xl mx-2"></i></a>
+            <a href="#"><i class="bi bi-instagram text-white text-2xl mx-2"></i></a>
+            <a href="#"><i class="bi bi-linkedin text-white text-2xl mx-2"></i></a>
+            <a href="#"><i class="bi bi-youtube text-white text-2xl mx-2"></i></a>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/2 lg:w-1/4 flex flex-col items-center md:items-start text-white mt-8 md:mt-0 md:pl-10">
+          <div class="font-bold text-xl mb-4">Company</div>
+          <ul class="text-gray-500 flex flex-col items-center md:items-start">
+            <li>About us</li>
+            <li>Privacy policy</li>
+            <li>Terms & conditions</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 text-white mt-8 md:mt-0 flex flex-col items-center md:items-start">
+          <div class="font-bold text-xl mb-4">Quick links</div>
+          <ul class="text-gray-500 flex flex-col items-center md:items-start">
+            <li>Hire from us</li>
+            <li>Find work</li>
+            <li>Community</li>
+            <li>Events</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 text-white mt-8 md:mt-0 flex flex-col items-center md:items-start">
+          <div class="font-bold text-xl mb-4">Download the app</div>
+          <!-- <div class="flex md:block p-4"> -->
+          <button class="bg-white text-black px-4 py-2 rounded-md mb-2">Free Trial Access to
+            the
+            LMS</button>
+          <button class="bg-white text-black px-4 py-2 rounded-md mb-2">Contact and get
+            support</button>
+          <!-- </div> -->
+          <p class="text-gray-500">Are you hiring? <a href="#" class="text-white">Hire from us</a></p>
+        </div>
+      </div>
+      <h1 class="text-gray-500 text-5xl text-center mt-8">UnStartED</h1>
+    </div>
+  </footer>
+  <script>
+    const lists = document.querySelectorAll(".active-nav li");
+    lists.forEach((item) => {
+      item.addEventListener("click", () => {
+        document.querySelector(".active-nav li.active").classList.remove("active");
+        item.classList.add("active");
+      });
+    });
+    $(document).ready(function () {
+      $(".active-nav li a").on('click', function (e) {
+        e.preventDefault()
+        var page = $(this).data('page');
+        $("#pages .page:not('hide')").stop().fadeOut('fast', function () {
+          $(this).addClass('hide');
+          $('#pages .page[data-page="' + page + '"]').fadeIn('slow').removeClass('hide');
+        });
+      });
+    });
+
+  </script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
