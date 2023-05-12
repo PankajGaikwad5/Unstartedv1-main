@@ -12,10 +12,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/open.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -24,7 +24,7 @@
 
 <body class="">
   <header
-    class="border-b border-black w-full top-0 sticky z-20 bg-white px-4 md:px-8 py-2 flex justify-between items-center">
+    class="border-b border-black w-full top-0 sticky z-10 bg-white px-4 md:px-8 py-2 flex justify-between items-center">
     <h1 class="logo text-2xl">Unstarted</h1>
     <button class="menu-button lg:hidden absolute right-4 top-3 z-20" onclick="btnClick('open')">
       <i class="bi bi-list text-2xl"></i>
@@ -51,6 +51,7 @@
       <!-- <button class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">Login</button> -->
     </nav>
   </header>
+
   <section class="banner-section" style="padding-top: 105px;">
     <div class="banner container-fluid text-start d-flex justify-content-between">
       <div class="course-content text-white d-flex flex-column align-items-start">
@@ -102,9 +103,9 @@
           <p style="width: 70%;">Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus
             vestibulum lorem sed risus ultricies.</p>
         </div>
-        <div style="position:relative;">
-          <div class="course-preview-filter ms-5" style>
-            <iframe width="650" height="345" src="https://www.youtube.com/embed/w-kBRUXsuSQ"
+        <div style="position:relative;" class="-mb-[7rem] md:mb-0">
+          <div class="course-preview-filter md:ms-5 flex justify-center items-center md:block" style>
+            <iframe class="w-full md:w-[650px] h-[200px] md:h-[345px]" src="https://www.youtube.com/embed/w-kBRUXsuSQ"
               style="border-radius: 30px;">
             </iframe>
           </div>
@@ -146,28 +147,28 @@
               <h5 class="mb-2 text-primary" style="font-style: underline;">Dr. Angela Yu</h5>
               <h6 class="mb-4 text-secondary">Developer and Lead Instructor</h6>
               <div class="row mb-4">
-                <div class="col-md-2">
+                <div class="col-md-3 ml-24 mb-4 md:mb-0 md:ml-0">
                   <img src="img/instructor.jpg" width="120" height="120" class="rounded-circle" alt="">
                 </div>
-                <div class="col-md-8 ps-5">
-                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-star-fill me-3" viewBox="0 0 16 16">
+                <div class="col-md-8 ps-5 ml-6 md:ml-0">
+                  <p class="mb-1 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill me-3" viewBox="0 0 16 16">
                       <path
                         d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                     </svg>4.7 Instructor Rating</p>
-                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-award-fill me-3" viewBox="0 0 16 16">
+                  <p class="mb-1 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-award-fill me-3" viewBox="0 0 16 16">
                       <path
                         d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
                       <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
                     </svg>553,949 Reviews</p>
-                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-people-fill me-3" viewBox="0 0 16 16">
+                  <p class="mb-1 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-people-fill me-3" viewBox="0 0 16 16">
                       <path
                         d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
                     </svg>1,723,085 Students</p>
-                  <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-play-fill me-3" viewBox="0 0 16 16">
+                  <p class="mb-1 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-play-fill me-3" viewBox="0 0 16 16">
                       <path
                         d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
                     </svg>9 Courses</p>
@@ -492,8 +493,9 @@
       </div>
     </div>
   </section>
+
   <footer class="bg-black">
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-10">
       <div class="flex flex-wrap justify-between items-center">
         <div class="w-full md:w-1/2 lg:w-1/4 text-white p-4">
           <p class="text-gray-500">Unstarted is committed to promoting the services of the future goals as
@@ -537,9 +539,10 @@
           <p class="text-gray-500">Are you hiring? <a href="#" class="text-white">Hire from us</a></p>
         </div>
       </div>
-      <h1 class="text-gray-500 text-5xl text-center mt-8">UnStartED</h1>
+      <h1 class="text-gray-500 text-5xl md:text-[15rem] text-center mt-8">UnStartED</h1>
     </div>
   </footer>
+
   <script>
     const lists = document.querySelectorAll(".active-nav li");
     lists.forEach((item) => {

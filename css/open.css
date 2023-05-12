@@ -86,7 +86,7 @@ p {
   }
 }
 .tick {
-  list-style: url(../images/tick.png);
+  list-style: url(../img/tick.png);
   margin-bottom: 16px;
 }
 
@@ -95,7 +95,7 @@ p {
   list-style: none;
 }
 .steps li {
-  list-style: inside url(../images/tick.png);
+  list-style: inside url(../img/tick.png);
   position: relative;
   padding: 0 0 1.5rem 2.5rem;
   color: #000;
