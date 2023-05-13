@@ -53,17 +53,20 @@
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 500px) {
-  .signup-card {
-    width: 100%;
-  }
-}
-
 .signup-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .signup-card {
+    width: 100%;
+  }
+  .signup-icons {
+    flex-direction: column;
+  }
 }
 
 .signup-icons a {

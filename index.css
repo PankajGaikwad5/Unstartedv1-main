@@ -459,8 +459,8 @@ header nav .header-btn {
 .page-5-grp-1 p {
   color: gray;
   font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
 }
 
 .page-5-btn {
@@ -473,7 +473,7 @@ header nav .header-btn {
 
 .page-5-grp-2 {
   flex: 0 0 auto;
-  width: 60%;
+  /* width: 60%; */
 }
 
 .page-5-grp-2 img {
