@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/navbar.css">
+  <!-- <link rel="stylesheet" href="css/navbar.css"> -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/open.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -29,8 +29,12 @@
     <button class="menu-button lg:hidden absolute right-4 top-3 z-20" onclick="btnClick('open')">
       <i class="bi bi-list text-2xl"></i>
     </button>
-    <button class="menu-button2 hidden absolute right-4 top-3 z-30 text-white" onclick="btnClick('close')">
-      <i class="bi bi-x-lg text-2xl"></i>
+    <button class="menu-button2 hidden absolute right-4 top-5 z-30 text-white" onclick="btnClick('close')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
+        viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+      </svg>
     </button>
     <nav class="pc-nav items-center hidden md:flex">
       <a href="#" class="text-black text-base font-medium mx-4">Executive Management</a>
@@ -308,7 +312,7 @@
 
               </div>
               <h2 class="mb-4">What you will learn</h2>
-              <div class="row mb-4 pb-5">
+              <div class="row mb-4 pb-5 pl-6">
                 <div class="col-md-6">
                   <ul class="px-2" style="list-style-position: inside;">
                     <li class="tick ps-2">You will learn automation, game, app and web development, data science and
@@ -340,16 +344,17 @@
                 felis.</p>
               <p class="mb-4 pb-5">Mi sit amet mauris commodo quis. Eget arcu dictum varius duis at consectetur
                 lorem.Venenatis cras sed felis eget velit aliquet.</p>
-              <img src="img/feature.jpeg" style="width: auto; height: 350px; object-fit: cover;" class="mb-4">
+              <img src="img/feature.jpeg" class="mb-4 w-auto pl-6 md:pl-0 md:h-[350px]">
             </div>
-            <div class="mt-5 mb-5 border-bottom text-black hide page" data-page="Heading4">
+
+            <div class="my-5 border-bottom text-black hide page -mr-6" data-page="Heading4">
               <h2 class="mb-5">What our students say</h2>
               <div class="d-flex flex-column justify-content-center align-items-start">
                 <div class="card flex-fill mb-4" style="padding: 40px 17px 40px 25px;">
-                  <div class="d-flex flex-row">
-                    <img src="img/face1.jpg" class="rounded-circle" style="width: 133px;height:133px;">
+                  <div class="d-flex flex-col md:flex-row justify-center items-center md:items-start">
+                    <img src="img/face1.jpg" class="rounded-circle mr-5 md:mr-0" style="width: 133px;height:133px;">
                     <div class="ms-5 mb-3">
-                      <div class="d-flex flex-row align-items-center fs-3">
+                      <div class="d-flex flex-row align-items-center ml-10 md:ml-0 fs-3 my-3 md:my-0">
                         <i class="fa fa-star" style="color: yellow;"></i>
                         <i class="fa fa-star" style="color: yellow;"></i>
                         <i class="fa fa-star" style="color: yellow;"></i>
@@ -368,10 +373,10 @@
                   </div>
                 </div>
                 <div class="card flex-fill mb-5" style="padding: 40px 17px 40px 25px;">
-                  <div class="d-flex flex-row">
-                    <img src="img/face2.jpg" class="rounded-circle" style="width: 133px;height:133px;">
+                  <div class="d-flex flex-col md:flex-row justify-center items-center md:items-start">
+                    <img src="img/face2.jpg" class="rounded-circle mr-5 md:mr-0" style="width: 133px;height:133px;">
                     <div class="ms-5 mb-3">
-                      <div class="d-flex flex-row align-items-center fs-3">
+                      <div class="d-flex flex-row align-items-center ml-10 md:ml-0 fs-3 my-3 md:my-0">
                         <i class="fa fa-star" style="color: yellow;"></i>
                         <i class="fa fa-star" style="color: yellow;"></i>
                         <i class="fa fa-star" style="color: yellow;"></i>
@@ -391,16 +396,30 @@
                 </div>
               </div>
             </div>
-            <div class="mt-5 mb-5 border-bottom text-black hide page w-100" data-page="Heading5">
+            <div class="mt-5 mb-5 border-bottom text-black hide page" data-page="Heading5">
               <h2 class="mb-5">Frequently Asked Questions</h2>
               <div class="accordion mb-5" id="accordionExample">
-                <div class="accordion-item card text-secondary shadow-sm mb-2">
+
+                <!-- <div class="accordion-item text-secondary">
                   <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                    aria-controls="collapseOne">
                     Where will I learn this course?
                   </div>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="collapseOne" style="visibility: unset;" class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>You will be transferred to IIT-Madras's Digital Skills Academy website to learn the course as
+                        this a course provided by GUVI in SkillsAcademy platform</p>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="accordion-item card text-secondary shadow-sm mb-2">
+                  <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-controls="collapseOne">
+                    Where will I learn this course?
+                  </div>
+                  <div id="collapseOne" style="visibility: unset;" class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>You will be transferred to IIT-Madras's Digital Skills Academy website to learn the course as
                         this a course provided by GUVI in SkillsAcademy platform</p>
@@ -409,11 +428,11 @@
                 </div>
                 <div class="accordion-item card text-secondary shadow-sm mb-2">
                   <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    data-bs-target="#collapseTwo" aria-controls="collapseTwo">
                     Will I gain access to any sort of Forum support?
                   </div>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" style="visibility: unset;" class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>Yes. You will gain complete access to our forum support to connect with our fellow aspiring
                         users.</p>
@@ -422,11 +441,11 @@
                 </div>
                 <div class="accordion-item card text-secondary shadow-sm mb-2">
                   <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    data-bs-target="#collapseThree" aria-controls="collapseThree">
                     Is this Certificate issued by IIT or GUVI?
                   </div>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
+                  <div id="collapseThree" style="visibility: unset;" class=" accordion-collapse collapse"
+                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       Your Certification is directly issued by IIT-Madras’s Digital Skills Academy(mentioned in the
                       certificate) through GUVI.
@@ -435,11 +454,11 @@
                 </div>
                 <div class="accordion-item card text-secondary shadow-sm mb-2">
                   <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    data-bs-target="#collapseFour" aria-controls="collapseFour">
                     When will I receive my Certificate & How will I receive it?
                   </div>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample">
+                  <div id="collapseFour" style="visibility: unset;" class="accordion-collapse collapse"
+                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>Certificates are awarded separately for a nominal fee. If Paid, you will receive an
                         E-certificate through email as soon as you complete the course with 100% progress.</p>
@@ -551,7 +570,7 @@
           <p class="text-gray-500">Are you hiring? <a href="#" class="text-white">Hire from us</a></p>
         </div>
       </div>
-      <h1 class="text-gray-500 text-5xl md:text-[14rem] text-center mt-8">UnStartED</h1>
+      <h1 class="text-gray-500 text-5xl md:text-[10rem] lg:text-[14rem] text-center mt-8">UnStartED</h1>
     </div>
   </footer>
 
