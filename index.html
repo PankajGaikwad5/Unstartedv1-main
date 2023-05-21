@@ -20,7 +20,8 @@
 <body>
     <header
         class="border-b border-black w-full top-0 sticky bg-white px-4 md:px-8 py-2 flex justify-between items-center">
-        <h1 class="logo text-2xl">Unstarted</h1>
+        <!-- <h1 class="logo text-2xl">Unstarted</h1> -->
+        <img src="./img/logo.png" alt="" class="h-[3rem]">
         <button class="menu-button lg:hidden absolute right-4 top-3 z-20" onclick="btnClick('open')">
             <i class="bi bi-list text-2xl"></i>
         </button>
@@ -28,12 +29,13 @@
             <i class="bi bi-x-lg text-2xl"></i>
         </button>
         <nav class="pc-nav items-center hidden md:flex">
-            <a href="#" class="text-black text-base font-medium mx-4">Executive Management</a>
-            <a href="#" class="text-black text-base font-medium mx-4">Hire from us</a>
-            <a href="#" class="text-black text-base font-medium mx-4">Blog</a>
-            <a href="#" class="text-black text-base font-medium mx-4">Support</a>
-            <a href="./login.html"
-                class="header-btn bg-black text-white px-4 py-2 rounded-md text-base font-medium">Login</a href="">
+            <a href="./open.html" class="text-black text-base font-bold mx-4">Executive Management</a>
+            <a href="#" class="text-black text-base font-bold mx-4">Hire from us</a>
+            <a href="#" class="text-black text-base font-bold mx-4">Blog</a>
+            <a href="./contact.html" class="text-black text-base font-bold mx-4">Contact</a>
+            <a href="./login.html" class="text-black text-base font-bold mx-4">Login</a>
+            <a href="./signup.html"
+                class="header-btn bg-black text-white px-4 py-2 rounded-md text-base font-medium">SignUp</a href="">
             <!-- <button class="header-btn bg-black text-white px-4 py-2 rounded-md text-base font-medium">Login</button> -->
         </nav>
         <nav
@@ -41,8 +43,9 @@
             <a href="#" class="text-white my-2 text-2xl">Executive Management</a>
             <a href="#" class="text-white my-2 text-2xl">Hire from us</a>
             <a href="#" class="text-white my-2 text-2xl">Blog</a>
-            <a href="#" class="text-white my-2 text-2xl">Support</a>
-            <a href="./login.html" class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">Login</a href="">
+            <a href="./contact.html" class="text-white my-2 text-2xl">Contact</a>
+            <a href="./login.html" class="text-white my-2 text-2xl">Login</a>
+            <a href="./signup.html" class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">SignUp</a href="">
             <!-- <button class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">Login</button> -->
         </nav>
     </header>
@@ -588,13 +591,12 @@
                         <a href="#"><i class="bi bi-youtube text-white text-2xl mx-2"></i></a>
                     </div>
                 </div>
-                <div
-                    class="w-full md:w-1/2 lg:w-1/4 flex flex-col items-center md:items-start text-white mt-8 md:mt-0 md:pl-10">
-                    <div class="font-bold text-xl mb-4">Company</div>
+                <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col items-center md:items-start text-white / md:pl-10">
+                    <div class="font-bold text-xl mb-4 md:-mt-12">Company</div>
                     <ul class="text-gray-500 flex flex-col items-center md:items-start">
                         <li>About us</li>
                         <li>Privacy policy</li>
-                        <li>Terms & conditions</li>
+                        <li><a href="./terms-of-service.html">Terms & conditions</a></li>
                     </ul>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 text-white mt-8 md:mt-0 flex flex-col items-center md:items-start">

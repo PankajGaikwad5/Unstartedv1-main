@@ -133,12 +133,12 @@ header nav .header-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 340px;
+  width: 390px;
 }
 .page-1-grp-1,
 .page-1-grp-2 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .page-1-col-1-btn {
@@ -332,7 +332,6 @@ header nav .header-btn {
 }
 
 .page-3-text-1 {
-  padding-top: 50px;
   font-size: 3rem;
   text-align: center;
   font-weight: 900;
@@ -530,12 +529,13 @@ header nav .header-btn {
 .page-6-text {
   font-size: 2rem;
   color: white;
-  margin-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .page-6-card p {
   color: gray;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 /* page-7 */
@@ -827,3 +827,20 @@ header nav .header-btn {
     font-size: 3rem;
   }
 } */
+
+.added{
+  font-size: 5rem;
+  line-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .added {
+    font-size: 3rem;
+  }
+  .page-1-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+  }
+}

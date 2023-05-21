@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
         integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -48,41 +48,51 @@
             <!-- <button class="bg-white text-black px-4 py-2 rounded-md mt-4 text-2xl">Login</button> -->
         </nav>
     </header>
-
     <div class="webpage">
-        <section id="login">
-            <h1 class="login-text">
-                Sign in to Codedamn
-            </h1>
-            <div class="login-card">
-                <form action="" class="form-card">
-                    <label>Email address/Username</label><br>
-                    <input type="text"><br>
-
-                    <label>Password</label><br>
-                    <input type="password"><br>
-
-                    <div class="form-flex">
-                        <div class="form-flex-col-1">
-                            <input type="checkbox">
-                            <label>Remember me</label>
-
-                        </div>
-                        <div class="form-flex-col-2">
-                            <a href="#">Forgot Your Password?</a>
+        <section id="contact">
+            <h1 class="text-1">Get help with UnStartED</h1>
+            <p class="text-2">Share any problem, feedback, or question you have.</p>
+            <div class="contact-card">
+                <div class="row">
+                    <div class="col-1 md:h-[32rem]">
+                        <div class="t-1">Contact information</div>
+                        <div class="t-2">You can contact the support from the form on right, or reach out to us on
+                            social media. Want to share feedback instead? <a href="#">Give feedback</a></div>
+                        <div class="t-3"><i class="bi bi-envelope"></i> support@codedamn.com</div>
+                        <div class="icons md:mt-[12rem]">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
                         </div>
                     </div>
-                    <button class="login-btn">Sign in</button><br>
-
-                    <span class="login-text-1">Or continue with</span><br>
-                    <div class="login-icons">
-                        <a href="#"><i class="bi bi-google"></i></a>
-                        <a href="#"><i class="bi bi-github"></i></a>
+                    <div class="col-2">
+                        <form>
+                            <div class="u-1">Send us a message</div>
+                            <div class="u-2">
+                                <div class="group-1">
+                                    <label>Name</label><br>
+                                    <input type="text">
+                                </div>
+                                <div class="group-2">
+                                    <label>Email</label><br>
+                                    <input type="email">
+                                </div>
+                            </div>
+                            <div class="u-3">
+                                <label>Subject</label><br>
+                                <input type="text">
+                            </div>
+                            <div class="u-4">
+                                <label>Message</label><br>
+                                <textarea></textarea>
+                            </div>
+                            <div class="u-5">
+                                <button>Submit</button>
+                            </div>
+                        </form>
                     </div>
-                    <span class="login-text-2">Don't have account? <a href="./signup.html">create Account</a></span>
-
-
-                </form>
+                </div>
             </div>
         </section>
 
@@ -101,8 +111,8 @@
                         </div>
                     </div>
                     <div
-                        class="w-full md:w-1/2 lg:w-1/4 flex flex-col items-center md:items-start text-white mt-8 md:mt-0 md:pl-10">
-                        <div class="font-bold text-xl mb-4">Company</div>
+                        class="w-full md:w-1/2 lg:w-1/4 flex flex-col items-center md:items-start text-white / md:pl-10">
+                        <div class="font-bold text-xl mb-4 md:-mt-12">Company</div>
                         <ul class="text-gray-500 flex flex-col items-center md:items-start">
                             <li>About us</li>
                             <li>Privacy policy</li>
@@ -136,10 +146,10 @@
                 <h1 class="text-gray-500 text-5xl md:text-[10rem] lg:text-[14rem] text-center mt-8">UnStartED</h1>
             </div>
         </footer>
-
     </div>
 
     <script src="./js/index.js"></script>
+
 </body>
 
 </html>
